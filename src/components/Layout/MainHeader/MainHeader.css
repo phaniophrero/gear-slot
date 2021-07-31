@@ -1,0 +1,32 @@
+.icon {
+  color: #fff;
+  font-size: 2.5rem;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.icon-2 {
+  font-size: 2.7rem;
+}
+
+.icon:hover {
+  color: #b40000;
+  transition: all 0.3s ease-out;
+}
+
+@media (max-width: 1024px) {
+  .icon {
+    font-size: 1.8rem;
+  }
+  .icon-2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .icon {
+    font-size: 1.5rem;
+  }
+  .icon-2 {
+    font-size: 1.8rem;
+  }
+}

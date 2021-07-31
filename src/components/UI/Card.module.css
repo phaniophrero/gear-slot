@@ -1,0 +1,19 @@
+.card {
+  width: 27.6rem;
+  height: 32.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 20px#9f9cb1dc;
+  transition: all 0.2s ease-out;
+}
+
+.card:hover {
+  box-shadow: 0 1px 30px#9f9cb1dc;
+  transform: scale(1.03);
+  transition: all 0.2s ease-out;
+}

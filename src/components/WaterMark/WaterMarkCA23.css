@@ -1,0 +1,26 @@
+.logo-ca23-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin: 0 auto;
+}
+.logo-ca23-wrapper {
+  width: 30rem;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: 1000;
+}
+
+.logo-ca23-2 {
+  left: 45%;
+}
+.logo-ca23-3 {
+  left: 70%;
+}
+
+.logo-ca23-wrapper img {
+  width: 100%;
+  opacity: 0.4;
+}

@@ -1,0 +1,15 @@
+.test-slider-container {
+  width: 100%;
+  height: 42vh;
+  padding: 0 10rem;
+  overflow: hidden;
+}
+
+.test-slide-image {
+  height: 35vh;
+  width: 100%;
+}
+
+.test-slide-image img {
+  width: 100%;
+}

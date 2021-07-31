@@ -1,0 +1,18 @@
+.footer-icon {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-right: 2rem;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.footer-icon-2 {
+  font-size: 2.7rem;
+}
+.footer-icon-3 {
+  font-size: 3rem;
+}
+
+.footer-icon:hover {
+  color: #b40000;
+  transition: all 0.2s ease-out;
+}

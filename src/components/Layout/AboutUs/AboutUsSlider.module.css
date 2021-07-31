@@ -1,0 +1,31 @@
+.about-slider-main {
+  width: 65%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-slider {
+  max-width: 70rem;
+  height: 48rem;
+  display: flex;
+  flex-direction: column;
+  margin: 10rem auto 0;
+  overflow: hidden;
+}
+
+.about-slider-wrapper {
+  max-width: 70rem;
+  height: 42rem;
+  display: flex;
+  margin: 0 auto 4rem;
+  justify-content: space-between;
+  transition: ease 1000ms;
+}
+
+.about-slider-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

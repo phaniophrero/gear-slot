@@ -1,0 +1,135 @@
+.menu-content {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.header-title-1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  line-height: 4.9rem;
+  text-transform: uppercase;
+}
+.header-title-2 {
+  color: #b40000;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.6rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+}
+
+.bottom-line-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-line {
+  width: 79.3rem;
+  height: 0.1rem;
+  background-color: #525252;
+  display: flex;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+}
+
+.drinks-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.drinks-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.drinks-heading-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+.drinks-content {
+  width: 81.7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 21rem;
+  grid-row-gap: 6rem;
+  margin: 0 auto;
+}
+
+.card-drink {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.drink-image-wrapper {
+  height: 16.8rem;
+  /* width: auto; */
+}
+
+.drink-image-wrapper img {
+  height: 16.8rem;
+}
+
+.drink-title,
+.drink-price {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.09rem;
+  line-height: 2.9rem;
+  margin-top: 3rem;
+}
+
+.drink-price {
+  margin: 0;
+}
+.drink-description {
+  color: #b40000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.075rem;
+  line-height: 2.5rem;
+  margin: 2rem 0rem;
+}
+
+.card-line-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-line {
+  width: 79.3rem;
+  height: 0.1rem;
+  background-color: #525252;
+  display: flex;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.space {
+  margin-top: 20rem;
+}
