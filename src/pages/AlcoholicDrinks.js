@@ -17,9 +17,7 @@ const AlcoholicDrinks = () => {
       </div>
       <div className={classes["drinks-container"]}>
         <div className={classes["drinks-heading"]}>
-          <h1 className={classes["drinks-heading-title"]}>
-            Bauturi Alcoolice Tari
-          </h1>
+          <h1 className={classes["drinks-heading-title"]}>Bauturi Alcoolice</h1>
         </div>
         <div className={classes["drinks-content"]}>
           {spiritsDrinksData.map((item) => (
