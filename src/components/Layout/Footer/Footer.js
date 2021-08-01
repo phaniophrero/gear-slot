@@ -30,16 +30,21 @@ const Footer = () => {
                 className: "footer-icon footer-icon-2",
               }}
             >
-              <IoLogoWhatsapp />
+              <a href="tel:0722753527">
+                <IoLogoWhatsapp />
+              </a>
+              <a href="https://wa.me/0722753527">
+                <IoLogoWhatsapp />
+              </a>
             </IconContext.Provider>
             <IconContext.Provider
               value={{
                 className: "footer-icon ",
               }}
             >
-              <Link to="https://www.facebook.com/Gear-Slot-Sal%C4%83-de-Jocuri-761374560736864/">
+              <a href="https://www.facebook.com/Gear-Slot-Sal%C4%83-de-Jocuri-761374560736864/">
                 <SiFacebook />
-              </Link>
+              </a>
             </IconContext.Provider>
           </div>
         </div>
@@ -90,9 +95,17 @@ const Footer = () => {
               className: "footer-icon footer-icon-3",
             }}
           >
-            <IoLogoWhatsapp />
+            <a href="https://wa.me/0722753527">
+              <IoLogoWhatsapp />
+            </a>
+            {/* <IoLogoWhatsapp /> */}
           </IconContext.Provider>
-          <h2 className={classes["footer-phone"]}>+40 722 753 527</h2>
+          <a
+            href="https://wa.me/0722753527"
+            className={classes["footer-phone"]}
+          >
+            +40 722 753 527
+          </a>
         </div>
       </div>
     </footer>

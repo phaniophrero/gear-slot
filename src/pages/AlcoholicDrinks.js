@@ -11,13 +11,16 @@ const AlcoholicDrinks = () => {
       <div className={classes["header"]}>
         <h1 className={classes["header-title-1"]}>Bauturi</h1>
         <h2 className={classes["header-title-2"]}>Alcoolice</h2>
-        <div className={classes["bottom-line-wrapper"]}>
-          <span className={classes["bottom-line"]}></span>
-        </div>
+      </div>
+      <div className={classes["bottom-line-wrapper"]}>
+        <span className={classes["bottom-line"]}></span>
       </div>
       <div className={classes["drinks-container"]}>
         <div className={classes["drinks-heading"]}>
           <h1 className={classes["drinks-heading-title"]}>Bauturi Alcoolice</h1>
+        </div>
+        <div className={classes["small-line-wrapper"]}>
+          <span className={classes["small-line"]}></span>
         </div>
         <div className={classes["drinks-content"]}>
           {spiritsDrinksData.map((item) => (
@@ -41,6 +44,9 @@ const AlcoholicDrinks = () => {
         <div className={classes["drinks-heading"]}>
           <h1 className={classes["drinks-heading-title"]}>Vinuri</h1>
         </div>
+        <div className={classes["small-line-wrapper2"]}>
+          <span className={classes["small-line2"]}></span>
+        </div>
         <div className={classes["drinks-content"]}>
           {wineDrinksData.map((item) => (
             <div key={item.id} className={classes["card-drink"]}>
@@ -62,6 +68,9 @@ const AlcoholicDrinks = () => {
       <div className={classes["drinks-container"]}>
         <div className={classes["drinks-heading"]}>
           <h1 className={classes["drinks-heading-title"]}>Beri</h1>
+        </div>
+        <div className={classes["small-line-wrapper3"]}>
+          <span className={classes["small-line3"]}></span>
         </div>
         <div className={classes["drinks-content"]}>
           {beerDrinksData.map((item) => (

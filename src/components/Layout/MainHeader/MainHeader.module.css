@@ -29,7 +29,7 @@
 }
 
 .contact-wrapper {
-  width: 23%;
+  width: 18%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -90,6 +90,10 @@
 }
 
 .nav-item a:hover {
+  color: #b40000;
+  transition: all 0.3s ease-out;
+}
+.nav-item a:active {
   color: #b40000;
   transition: all 0.3s ease-out;
 }

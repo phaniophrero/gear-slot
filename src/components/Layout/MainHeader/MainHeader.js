@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import logo from "../../../media/img/logo.png";
@@ -10,6 +10,12 @@ import classes from "./MainHeader.module.css";
 import "./MainHeader.css";
 
 const MainHeader = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const clickedHandler = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
     <header className={classes["main-header"]}>
       <div className={classes["navbar"]}>
@@ -29,9 +35,9 @@ const MainHeader = () => {
                 className: "icon",
               }}
             >
-              <Link to="https://www.facebook.com/Gear-Slot-Sal%C4%83-de-Jocuri-761374560736864/">
+              <a href="https://www.facebook.com/Gear-Slot-Sal%C4%83-de-Jocuri-761374560736864/">
                 <SiFacebook />
-              </Link>
+              </a>
             </IconContext.Provider>
           </div>
           <div className={classes["icon-wrapper"]}>
@@ -53,7 +59,13 @@ const MainHeader = () => {
             <Link to="/">Acasa</Link>
           </li>
           <li className={classes["nav-item"]}>
-            <Link to="/bauturi-alcoolice">Bauturi Alcoolice</Link>
+            <Link
+              onClick={clickedHandler}
+              className={clickedHandler ? "active" : ""}
+              to="/bauturi-alcoolice"
+            >
+              Bauturi Alcoolice
+            </Link>
           </li>
           <li className={classes["nav-item"]}>
             <Link to="/bauturi-racoritoare">Bauturi Racoritoare</Link>

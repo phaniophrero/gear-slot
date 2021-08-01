@@ -66,9 +66,9 @@ const AboutUsSlider = () => {
 
   return (
     <div className={classes["about-slider-main"]}>
-      <div className={classes["about-slider-button"]}>
+      {/* <div className={classes["about-slider-button"]}>
         <BtnSlider moveSlide={prevSlide} direction={"prev"} />
-      </div>
+      </div> */}
       <div className={classes["about-slider"]}>
         <div
           className={classes["about-slider-wrapper"]}
@@ -98,9 +98,9 @@ const AboutUsSlider = () => {
           ))}
         </div>
       </div>
-      <div className={classes["about-slider-button"]}>
+      {/* <div className={classes["about-slider-button"]}>
         <BtnSlider moveSlide={nextSlide} direction={"next"} />
-      </div>
+      </div> */}
     </div>
   );
 };

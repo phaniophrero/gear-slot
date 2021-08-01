@@ -19,6 +19,9 @@ const SodaDrinks = () => {
         <div className={classes["drinks-heading"]}>
           <h1 className={classes["drinks-heading-title"]}>Apa</h1>
         </div>
+        <div className={classes["small-line-wrapper3"]}>
+          <span className={classes["small-line3"]}></span>
+        </div>
         <div className={classes["drinks-content"]}>
           {waterDrinksData.map((item) => (
             <div key={item.id} className={classes["card-drink"]}>
@@ -41,6 +44,9 @@ const SodaDrinks = () => {
         <div className={classes["drinks-heading"]}>
           <h1 className={classes["drinks-heading-title"]}>Sucuri</h1>
         </div>
+        <div className={classes["small-line-wrapper2"]}>
+          <span className={classes["small-line2"]}></span>
+        </div>
         <div className={classes["drinks-content"]}>
           {sodaDrinksData.map((item) => (
             <div key={item.id} className={classes["card-drink"]}>
@@ -62,6 +68,9 @@ const SodaDrinks = () => {
       <div className={classes["drinks-container"]}>
         <div className={classes["drinks-heading"]}>
           <h1 className={classes["drinks-heading-title"]}>Energizante</h1>
+        </div>
+        <div className={classes["small-line-wrapper"]}>
+          <span className={classes["small-line"]}></span>
         </div>
         <div className={classes["drinks-content"]}>
           {energyDrinksData.map((item) => (
