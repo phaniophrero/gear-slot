@@ -29,15 +29,16 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!-- Messenger Chat plugin Code -->
+
+    <!-- Messenger Plugin pentru chat Code -->
     <div id="fb-root"></div>
 
-    <!-- Your Chat plugin code -->
+    <!-- Your Plugin pentru chat code -->
     <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <script>
       var chatbox = document.getElementById("fb-customer-chat");
-      chatbox.setAttribute("page_id", "595165694283631");
+      chatbox.setAttribute("page_id", "584689638543871");
       chatbox.setAttribute("attribution", "biz_inbox");
 
       window.fbAsyncInit = function () {
@@ -53,7 +54,7 @@
         if (d.getElementById(id)) return;
         js = d.createElement(s);
         js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        js.src = "https://connect.facebook.net/ro_RO/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
       })(document, "script", "facebook-jssdk");
     </script>
