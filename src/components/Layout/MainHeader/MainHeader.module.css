@@ -82,22 +82,6 @@
   margin: 0 auto;
 }
 
-.nav-item a {
-  color: #fff;
-  font-size: 1.5rem;
-  text-decoration: none;
-  transition: all 0.3s ease-out;
-}
-
-.nav-item a:hover {
-  color: #b40000;
-  transition: all 0.3s ease-out;
-}
-.nav-item a:active {
-  color: #b40000;
-  transition: all 0.3s ease-out;
-}
-
 .bottom-line-wrapper {
   width: 100%;
   display: flex;

@@ -5,6 +5,7 @@ import logo from "../../../media/img/logo.png";
 import { IconContext } from "react-icons";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { SiFacebook } from "react-icons/si";
+import { useLocation } from "react-router-dom";
 
 import classes from "./MainHeader.module.css";
 import "./MainHeader.css";
@@ -15,6 +16,14 @@ const MainHeader = () => {
   const clickedHandler = () => {
     setIsClicked(!isClicked);
   };
+
+  const location = useLocation();
+
+  //destructuring pathname from location
+  const { pathname } = location;
+
+  //Javascript split method to get the name of the path in array
+  const splitLocation = pathname.split("/");
 
   return (
     <header className={classes["main-header"]}>
@@ -55,25 +64,43 @@ const MainHeader = () => {
 
       <nav className={classes.nav}>
         <ul className={classes["nav-list"]}>
-          <li className={classes["nav-item"]}>
+          <li
+            className={splitLocation[1] === "" ? "nav-item active" : "nav-item"}
+          >
             <Link to="/">Acasa</Link>
           </li>
-          <li className={classes["nav-item"]}>
-            <Link
-              onClick={clickedHandler}
-              className={clickedHandler ? "active" : ""}
-              to="/bauturi-alcoolice"
-            >
-              Bauturi Alcoolice
-            </Link>
+          <li
+            className={
+              splitLocation[1] === "bauturi-alcoolice"
+                ? "nav-item active"
+                : "nav-item"
+            }
+          >
+            <Link to="bauturi-alcoolice">Bauturi Alcoolice</Link>
           </li>
-          <li className={classes["nav-item"]}>
+          <li
+            className={
+              splitLocation[1] === "bauturi-racoritoare"
+                ? "nav-item active"
+                : "nav-item"
+            }
+          >
             <Link to="/bauturi-racoritoare">Bauturi Racoritoare</Link>
           </li>
-          <li className={classes["nav-item"]}>
+          <li
+            className={
+              splitLocation[1] === "bauturi-espresso"
+                ? "nav-item active"
+                : "nav-item"
+            }
+          >
             <Link to="/bauturi-espresso">Bauturi Espresso</Link>
           </li>
-          <li className={classes["nav-item"]}>
+          <li
+            className={
+              splitLocation[1] === "about-us" ? "nav-item active" : "nav-item"
+            }
+          >
             <Link to="/about-us">Despre noi</Link>
           </li>
         </ul>

@@ -13,6 +13,22 @@
   transition: all 0.3s ease-out;
 }
 
+.nav-item a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #b40000;
+  transition: all 0.3s ease-out;
+}
+
+.nav-item.active a {
+  color: #b40000;
+}
+
 @media (max-width: 1024px) {
   .icon {
     font-size: 1.8rem;
