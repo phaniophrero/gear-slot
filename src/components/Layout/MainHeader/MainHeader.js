@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 import logo from "../../../media/img/logo.png";
@@ -11,12 +11,6 @@ import classes from "./MainHeader.module.css";
 import "./MainHeader.css";
 
 const MainHeader = () => {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const clickedHandler = () => {
-    setIsClicked(!isClicked);
-  };
-
   const location = useLocation();
 
   //destructuring pathname from location
@@ -55,7 +49,9 @@ const MainHeader = () => {
                 className: "icon icon-2",
               }}
             >
-              <IoLogoWhatsapp />
+              <a href="https://wa.me/0722753527">
+                <IoLogoWhatsapp />
+              </a>
             </IconContext.Provider>
           </div>
           <h3 className={classes["phone-number"]}>+40 722 753 527</h3>
